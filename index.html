@@ -9,24 +9,18 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="star-shop/shopping.html" class="p-4 mx-auto border rounded d-flex flex-column w-50">
-        <div class="form-floating mb-5">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <form action="star-shop/shopping.html" class="p-4 mx-auto border rounded d-flex flex-column w-50" id="form">
+        <div class="form-floating my-5">
+            <input type="email" autocomplete="off" class="form-control" required id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">Email address</label>
         </div>
-        <div class="form-floating mb-5">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <div class="form-floating mb-5 d-flex">
+            <input type="password" class="form-control" required id="floatingPassword" placeholder="Password">
             <label for="floatingPassword">Password</label>
+            <i id="passShow" class="fa-regular fa-eye"></i>
         </div>
-        <button type="submit" class="btn btn-info text-white align-self-center px-4">Login</button>
+        <button onclick="login()" type="submit" class="btn btn-info text-white align-self-center px-4">Login</button>
     </form>
-
-
-
-
-
-
-
 
 
 
