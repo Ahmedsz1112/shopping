@@ -14,5 +14,22 @@ body {
 }
 
 body form {
-    background: linear-gradient(217deg, rgb(58 0 255 / 67%), rgba(255, 0, 0, 0.5) 70.71%), linear-gradient(127deg, rgba(0, 238, 255, 0.445), rgba(0, 238, 255, 0.397) 70.71%), linear-gradient(336deg, rgba(204, 0, 255, 0.8), rgba(204, 0, 255, 0.24) 70.71%);
+    backdrop-filter: blur(3px);
+}
+
+form .show {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    align-items: center;
+}
+#passShow {
+    line-height: 60px;
+    margin-left: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+    color: #000;
+    position: absolute;
+    right: 10px;
 }
