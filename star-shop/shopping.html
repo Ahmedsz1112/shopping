@@ -9,38 +9,50 @@
     <title>Shopping</title>
 </head>
 <body>
-    <div class="container">
-        <header>
+    <!-- header -->
+    <header>
+        <div class="container">
             <a href=""><img class="logo" src="../star-shop/img/logo1.webp" alt=""></a>
             <div class="nav">
-                <button type="button" class="btn btn-primary position-relative">
+                <button id="shoppBtn" class="btn btn-primary position-relative mx-4 shoppingAll" >
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
-                        99+
-                        <span class="visually-hidden">unread messages</span>
-                    </span>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark" id="counter">0</span>
                 </button>
-                <a href="" id="logOut">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                <a href=""  id="logOut"> <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
             </div>
-        </header>
-    </div>
+        </div>
+    </header>
+    
+    <!-- main -->
+    <main class="my-5 pt-4">
+        <div class="container">
+            <div class="row demo">
+                
+            </div>
+        </div>
+    </main>
+
+        <!-- exit -->
         <section id="show" class="exit">
             <div>
+                <i id="close" class="fa-solid fa-xmark"></i>
                 <h1>Welcome dear guests</h1>
                 <a href="../index.html">Exit</a>
             </div>
         </section>
-        <main>
-    
-        </main>
-    
 
-
-
-
-
-
-
+        <!-- shopping -->
+        <section id="product" class="">
+            <div class="container" style="text-align: end;">
+                <div class="d-flex justify-content-between align-items-center my-5">
+                    <h1 id="totalPrice" class="bg-dark text-white p-2"></h1>
+                    <i id="closeShopping" class="fa-solid fa-arrow-right-from-bracket"></i>
+                </div>
+                <div class="row done">
+                    
+                </div>
+            </div>
+        </section>
 
 
     <script src="../js/bootstrap.bundle.min.js"></script>
